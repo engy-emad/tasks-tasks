@@ -1,0 +1,69 @@
+body {
+    background-color: black;
+}
+
+.panda {
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.panda::before,
+.panda::after {
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border-radius: 50%;
+    top: -30px;
+    left: -5px;
+}
+
+.panda::after {
+    left: 220px;
+}
+
+.panda.eyes::before,
+.panda.eyes::after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: #000;
+    border-radius: 50%;
+    top: 100px;
+    left: 60px;
+}
+
+.panda.eyes::after {
+    background: #000;
+    left: 200px;
+}
+
+.mouse::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 20px;
+    background: #fff;
+    top: 15em;
+    left: 100px;
+    border: 2px solid #000;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-inline: 10px;
+}
+
+.nose::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 60px;
+    background: #000;
+    border-radius: 50%;
+    top: 10em;
+    left: 10em;
+}
+

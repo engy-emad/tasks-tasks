@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+/*basic*/
+body{
+    color: #555;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+ /*  header*/
+ .container{
+ 
+     color:white;
+     background-color: #fd7e14;
+     height: 200px;
+     
+ }
+ .nav{
+     display: flex;
+     margin-top: 40px;
+   
+   
+  
+
+ }
+ .nav il a{
+     color: white;
+     text-decoration: none;
+     margin-left: 30px;
+     padding: 30px;
+     
+ }
+
+ .logo{
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 40px;
+ }
+ .logo1{
+     width: 150px;
+     height: auto;
+ }
+ /*     selection   */
+ .navbar{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 40px;
+
+ }
+ .navbar il a{ 
+text-decoration: none;
+margin-left: 20px;
+color: #555;
+
+     
+ }
+ .navbar il a:hover{ 
+    text-decoration: none;
+    color:#fd7e14 ;
+         
+     }
+     .sky{
+         background-color: rgba(230, 217, 217, 0.938);
+         height: 250px;
+         
+     }
+     .btn{
+        padding: 20px;
+     }
+     .btn0{
+         background-color: #fd7e14;
+         color: white;
+         margin-left: 2px;
+         text-decoration: none;
+         margin-bottom: 20px;
+     }
+     .text1{
+         font-family: 'Courier New', Courier, monospace;
+         margin:30px 0;  
+     }
+ .table{
+     margin-top: 50px;
+  display: flex;
+  height: 450px;   
+  justify-content: space-around;
+
+
+ }
+ .trevel5{
+     width: auto;
+     height: 500px;
+ }
+ .trevel6{
+    width: auto;
+    height: 250px;
+}
+ .tevel1{
+     display: flex;
+     flex: 1;
+    
+ }
+ .tevel2{
+    display: flex;
+    flex: 2;
+   
+}
+ .teve4{
+    display: flex;
+    flex: 1;
+  
+ }
+.trevel3{
+    display: flex;
+    flex: 1; 
+ }
+
+.clear{
+    clear: both;
+}

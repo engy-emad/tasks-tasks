@@ -1,0 +1,131 @@
+#team{
+    text-align: center;
+    color: #fff;
+    padding-top: 58px;
+    background: rgba(128, 128, 128, 0.753);
+    font-family: tahoma;
+    height: 100vh;
+}
+
+#team h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.2;
+    max-width: 650px;
+    margin: 0 auto 1.5rem;
+    font-family: Oswald,sans-serif;
+    letter-spacing: 1px;
+}
+img{
+    max-width: 100%;
+    height:400px;
+
+}
+
+.team-social li{
+  display: inline-block;  
+}
+.team-social li a{
+    font-size: 14px;
+    color: #18191d;
+    height: 38px;
+    width: 38px;
+    line-height:48px ;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    border: 1px solid transpoatent;
+    border-radius: 50%;
+}
+.team-img{
+   
+    position: relative;
+}
+.team-social.white-bg li a{
+     background: #fff;
+}
+
+.team-coverflow{
+    
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    width: 100%;
+    max-width: 365px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+}
+.team-coverflow.team-text{
+     text-align: center;
+     font-size: 14px;
+
+}
+.team-coverflow.team-text h4{
+    font-size: 1.6rem;
+}
+
+.swiper-slider-active.team-coverflow:hover.team-box-content{
+    opacity: 1;
+    visibility: visible;
+    border-radius: 0;
+    bottom: 0;
+}
+
+.team-box-content{
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left:0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 20px 0;
+    bottom: -20%;
+    z-index: 1;
+    transition: all linear 0.4s;
+}
+
+.team-coverflow .team-img{
+    overflow: hidden;
+    width: 100%;
+}
+
+.team-member-slider{
+    padding-bottom: 165px;
+}
+.team-member-slider.swiper-slide-shadow-left,
+.team-member-slider.swiper-slide-shadow-right{
+    display: none;
+}
+.team-member-slider.swiper-slide{
+    opacity: 1;
+}
+.team-member-slider.swiper-slide-prev{
+   transform: scale(1.1) translate3d(25%,0px,-155.962px) rotate(0deg) rotateY(2.9898deg)!important;
+   padding-right: 15px;
+   cursor: pointer;
+
+}
+.team-member-slider.swiper-slide-active{
+    transform: translateY(25%)!important;
+    transition: 300ms;
+    opacity: 1 !important;
+}
+
+.slider-arrows{
+    border-radius: 36px;
+    background: rgba(0,0,0,0.45);
+    color: #fff;
+    width:45px ;
+    height: 45px;
+    line-height: 47px;
+    transition: 1s;
+}

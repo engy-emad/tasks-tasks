@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    background-color: black;
+   box-sizing: border-box; 
+}
+
+
+
+.logo{
+    width: 60px;
+    height: auto;
+    margin-top: 20px;
+    float: left;
+}
+
+.main-nav{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.main-nav il{
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    list-style: none;
+    margin-left: 30px;
+}
+.main-nav il a{
+    color: blanchedalmond;
+    text-decoration: none;
+
+
+}
+.main-nav il a:hover{
+    color: red;
+    border-bottom: 3px solid #10ac84;
+  
+    
+  }
+  
+    

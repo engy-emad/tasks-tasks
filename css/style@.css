@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+}
+
+section{
+    position: relative; 
+    width: 100%;
+    min-height: 100vh; 
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    
+  }
+header{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 28px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+ .loge{
+  position:relative ;
+  display: flex;
+}
+header img{
+    max-width: 60px;
+}
+
+header nav a{
+    color: #333;
+    font-weight: 400;
+    margin-left: 48px;
+  
+
+}
+header nav a:hover{
+    color: rgb(25, 174, 211);
+    font-weight: 400;
+    margin-left: 48px;
+
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+  }
+  .content .textBox h2{
+   color: #333; 
+   font-size: 4em;
+   line-height: 1.4em;
+   font-weight: 400;
+  }
+
+  .content .textBox h2 span{
+      color: aqua;
+      font-weight: 900;
+      font-size: 1.2em;
+  }
+  .content p{
+      color: #333;
+  }
+  
+  .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background:aqua ;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .imageBox img{
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 50px;
+    margin-top: 50px;
+  }
+  .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:aqua ;
+    clip-path: circle(600px at right 700px);
+  }

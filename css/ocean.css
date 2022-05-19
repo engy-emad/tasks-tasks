@@ -1,0 +1,202 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body.dark{
+    filter: invert(1);  
+    mix-blend-mode: multiply;
+}
+
+:root{
+    --black:#333;
+    --white:#fff;
+}
+.dark{
+    --black:#fff;
+    --white:--#333;
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+   
+}
+.logo{
+    position: relative;
+    display: inline-block;
+    color: var(--blackblack);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.rightSide{
+    display: flex;
+}
+
+.btns{
+    position: relative;
+    width: 40px;
+    height: 40x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10PX;
+
+}
+.btns ion-icon {
+  font-size: 1.5em;
+  color: var(--black);
+  
+}
+
+
+.btns.menuToggle{
+    font-size: 3em;
+}
+
+.btns ion-icon:nth-child(2){
+    display: none;
+    }
+
+    .btns.active ion-icon:nth-child(2){
+     display: block;
+        
+        }
+.btns.active ion-icon:nth-child(1){
+
+   display: none;
+     }
+.btns.active ion-icon:nth-child(3){
+  display: block;
+                   
+    }
+ .btns.active ion-icon:nth-child(4){
+           
+  display: none;
+    }
+.main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+}
+.mask{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    user-select:none ;
+    mix-blend-mode: screen;
+}
+.dark.mask{
+  filter: invert(1);  
+  mix-blend-mode: multiply;
+
+}
+.main h2{
+    position: relative;
+    z-index: 3;
+    font-size: 15vw;
+    color: #333;
+    text-shadow: 0 20px 30px rgba(0,0,0,0.2);
+}
+.navigation{
+   position:absolute;
+   top:0;
+   left:-100%;
+   width:100%;
+   height:100%;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background: var(--white);
+   z-index:4 ;
+   transition: 0.05s;
+
+}
+.navigation.active{
+    left: 0;
+}
+
+.navigation li{
+    list-style: none;
+}
+.navigation li a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 1.35em;
+    color: var(--black) ;
+    padding: 5px 20px;
+    border-radius: 40px;
+}
+.navigation li a:hover{
+    background: var(--black);
+   color: #fff;
+    
+}
+
+.copyrightText{
+  position:absolute;  
+  left: 100px;
+  bottom: 40px;
+  z-index: 4;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: var(--black);
+}
+.sci{
+  position: absolute;  
+  right: 100px;
+  bottom: 30px;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+   text-decoration: none; 
+   font-size: 1.75em;
+   color: var(--black);
+}
+@media(max-width:760px){
+    header{
+        padding: 20px;
+    }
+    .copyrightText{
+        left: 20px;
+        bottom: 30px;
+    }
+    .sci{
+        right: 20px;
+        bottom: 20px;
+    }
+}

@@ -1,0 +1,26 @@
+div.img{
+    margin: 10px;
+    border: 1px solid #ccc;
+    float: left;
+    width:120px ;
+    height: 200px;
+}
+div.img:hover{
+    border: 3px solid steelblue;
+}
+div.img img{
+    width: 100%;
+    height: 100px;
+}
+
+ 
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+body{
+    background: teal;
+ 
+    
+
+   

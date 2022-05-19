@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/white.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    min-height: 100vh;
+
+}
+
+
+
+h2,.active1{
+    position: relative;
+    text-transform:uppercase;
+    color: #fff;
+    font-size: 14em;
+    cursor: pointer;
+    -webkit-text-stroke: 0.3vw #333;
+
+
+}
+h2::before{
+    position: absolute;
+    content: attr(data-text);
+    top:9;
+    left:0;
+    width: 0;
+    height: 100%;
+    color: #333;
+    
+    -webkit-text-stroke:  0.3vw #333;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+
+
+}
+@keyframes  animate{
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+
+
+
+
+.dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url('../images/red.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+}
+.active{
+    position: relative;
+    text-transform:uppercase;
+    color: rgba(41, 4, 4, 0.74);
+    font-size: 14em;
+    cursor: pointer;
+    -webkit-text-stroke: 0.3vw #333;
+
+
+}
+.active::before{
+    position: absolute;
+    content: attr(data-text);
+    top:9;
+    left:0;
+    width: 0;
+    height: 100%;
+    color: #fff;
+    -webkit-text-stroke:  0.3vw #333;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+
+
+}
+
+
+.black{
+    background: url('../images/circle.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.black1{
+    background: url('../images/showod.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.active2{
+    position: relative;
+    text-transform:uppercase;
+    color: aqua;
+    font-size: 10em;
+    cursor: pointer;
+    -webkit-text-stroke: 0.3vw #333;
+
+
+}
+.active2::before{
+    position: absolute;
+    content: attr(data-text);
+    top:9;
+    left:0;
+    width: 0;
+    height: 100%;
+    color: #fff;
+    -webkit-text-stroke:  0.3vw #333;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+
+
+}

@@ -1,0 +1,15 @@
+.container{
+    width:800px ;
+    height:500px ;
+    background-color: turquoise;
+    position: static;
+}
+.child,child2{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    position: relative;
+    top:50px;
+  
+    left:100px;
+}

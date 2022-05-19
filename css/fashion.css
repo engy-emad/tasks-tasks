@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    width: 100%;
+    color: #333;
+    height: 50vh;
+   
+}
+
+header nav{
+    display: flex;
+    position: relative;
+    width: 100%;
+    font-size: 18px;
+    background: rgba(241, 230, 230, 0.849);
+}
+.logo{
+    max-width: 100%;
+    height: 20px;
+    margin: 15px 200px;
+}
+nav ul{
+ width: 100%;   
+}
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    margin: 15px 30px;
+    font-weight: 400;
+}
+nav ul li a{
+cursor: pointer;
+text-decoration: none;
+color: #333;
+    
+}
+li a:hover{
+    color: rgb(207, 39, 39);
+    cursor: pointer;
+ }
+
+ section{
+     width: 100%;
+     height: 500px;
+     
+    
+ }
+ .container{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+ 
+ }
+.container span{
+     display: block;
+     color: orangered;
+ }
+ .container h2{
+     font-size: 50px;
+     font-weight: 600;
+     letter-spacing: 1px;
+     margin: 15px 0;
+ }
+.fashion{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.fashion h2,.fashion3 h2,.fashion4 h2{
+   
+    padding: 30px;
+    font-size: 50px;
+    font-weight: 500;
+}
+.fashion h2 a{
+    color: #333;
+    font-weight: 400;
+    font-size: 30px;
+   
+   
+}
+.fashion h2 a:hover{
+    color: #333;
+    font-weight: 400;
+    color: orangered; 
+}
+.fachion2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.fashion3 a,.fashion4 a{
+    padding: 30px;
+    color: #333;
+}
+.fashion4 img{
+    margin-top: 50px;
+
+}
+.text{
+    width: 100%;
+    color: #333;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.text span{
+    font-size: 30px;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.text span:hover{
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+}

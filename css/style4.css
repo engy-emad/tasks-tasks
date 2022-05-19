@@ -1,0 +1,27 @@
+.a{
+    width: 100px;
+    height: 100px;
+    background: steelblue;
+    -webkit-transition: width  2s;
+    transition: width 2s;}
+    .a:hover{ 
+        width: 599px;
+background-color: red;
+    }
+  .b{
+      width: 100px;
+      height: 100px;
+      background: turquoise;
+      -webkit-transition: width 2s,
+      height 2s ,-webkit-transform ss;
+      transition: width 2s,height 2s ,
+      transform 2s;
+  }
+  .b:hover{
+      width: 300px;
+      height: 300px;
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+  }
+
+

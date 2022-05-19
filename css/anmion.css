@@ -1,0 +1,71 @@
+article{
+    width: 30%;
+    border: 3px double red;
+    text-align: center;
+    float: left;
+}
+article h2{
+    width: 33%;
+    border: 3px double black;
+    padding: 20px;
+    
+}
+h2:hover{
+    animation-name: changeColor;
+    animation-duration:2s ; /*time*/
+    animation-delay:2s ;
+    animation-iteration-count:2 ;
+    animation-direction:alternate ;
+    
+}
+@keyframes changeColor{
+   from{
+        background: #fff;
+   } 
+   to{
+      background: black;
+      color:#fff;
+   }
+}
+
+h3:hover{
+    /*animation-name:changeColor ;
+    animation-duration: 2s;
+    animation-direction:alternate ;
+    animation-timing-function: ease;*/
+    animation: changeColor 2s alternate ease;
+}
+img{
+animation-name:slide-top ;
+animation-duration: 2s;
+}
+@keyframes changeColor{
+    0%{
+        border: 2px double blueviolet;
+        padding: 20px;
+        height: 100px;
+    }
+    10%{
+        background: chartreuse;
+    }
+    50%{
+        background: cornflowerblue;
+    }
+    100%{
+        background: darkblue;
+    }
+
+}
+/*animation css.net website*/
+@-webkit-keyframes slide-top{0%{-webkit-transform:translateY(0);transform:translateY(0)}
+100%{-webkit-transform:translateY(-100px);transform:translateY(-100px)}}@keyframes slide-top
+{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{-webkit-transform:translateY
+    (-100px);transform:translateY(-100px)}}
+
+
+    /*-webkit- transition:all 1s ease -in -out
+    transition:all ease-in-out;
+    translte:hover{
+        -webkit-transform:translateY long (-160px) scale(.75) rotate(-20deg);
+        transform:translateX(-160px)scale(.75) rotate(-30deg)
+        box-shadow:1pxtop 2pxbottom shadow20px -11px red;*/

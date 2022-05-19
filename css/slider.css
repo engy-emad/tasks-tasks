@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 3.5rem;
+    line-height: 2;
+    text-align: center;
+   color: var(--color-primary);
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+img{
+width: 300px;
+height: 200px;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+main{
+    background: #f4f4f4;
+    padding: 4rem 0;
+}
+.slider-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.arrow{
+    width: 2rem;
+    margin: 0 1rem;
+}
+section{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+
+}
+section::-webkit-scrollbar{
+    height: 5px;
+    width: 2px;
+    border: 1px solid #f4f4f4;
+    background: #f4f4f4;
+}
+section::-webkit-scrollbar-track{
+    --webkit-box-shadow:inset 0 0 6px rgba(0,0,.3)
+}
+section::-webkit-scrollbar-thumb{
+    background-color: rgb(90, 51, 90)
+
+}
+.thumnail{
+    flex:0 0 auto;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 5px ;
+    border: 1px solid black;
+    border-radius: 3px;
+    overflow: hidden;
+    transform: scale(.95);
+    transition: all .3s;
+}
+.thumnail:hover{
+ transform: scale(1);
+ 
+}
+.product-details{
+    text-align: center;
+    padding-bottom: 1rem;
+    background: #fff;
+}
+.product-details h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.product-details p{
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    color: green;
+    font-weight: 700;
+}
+.product-details p span{
+    font-weight: normal;
+    text-decoration: line-through;
+    color: red;
+}
+.product-details a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    background: sandybrown;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 3px;
+    transition: all .3s;
+}
+.product-details a:hover{
+   background: palevioletred; 
+}

@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    position: absolute;
+    background: #fff;
+    color: black;
+    margin: 100px;
+    width: 100px;
+    height: 40px;
+    
+}
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+}
+.circle{
+    position: absolute;
+    background: #fff;
+    width: 100px;
+    height:100px;
+    box-shadow: 20px 20px 40px rgba(192, 182, 182, 0.2);
+}
+.full{
+    background: url('../images/woman.webp');
+    background-size: cover;
+    position: absolute;
+    border-radius: 59%;
+    width: 100px;
+    height:100px;
+    box-shadow: 20px 20px 40px rgba(192, 182, 182, 0.2);
+}
+.circle::before{
+  content: '';
+  top:-50%;
+  left:0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: red;
+  border-radius: 50%;
+  box-shadow: 20px 20px 40px rgba(192, 182, 182, 0.2);
+
+}
+.circle::after{
+    content: '';
+    top:0;
+    left:-50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:url('../images/woman.jpg');
+    border-radius: 50%;
+    box-shadow: 20px 20px 40px rgba(192, 182, 182, 0.2);
+  
+  }

@@ -1,0 +1,29 @@
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+   
+
+}
+.container{
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+.blog-post{
+    background-color: turquoise;
+    width: 75%;
+    float: left;
+}
+
+.other-post{
+background-color: violet;
+width: 25%;
+float: left;
+}
+ 
+.auther{
+    background-color: yellow;
+
+}

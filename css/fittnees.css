@@ -1,0 +1,177 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url('../images/fitness1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+}
+
+header {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: absolute;
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+}
+
+header .navigation li {
+    list-style: none;
+}
+
+header .navigation li a {
+    display: inline-block;
+    color: #fff;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.content {
+    max-width: 600px;
+}
+
+.content .contentBox h2 {
+    color: #fff;
+    font-size: 4em;
+    margin-top: 30px;
+    line-height: 1em;
+}
+
+.content .contentBox p {
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 300px;
+    margin: 20px 0;
+}
+
+.content .contentBox a {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #03a9f4;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.sci {
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+}
+
+.sci li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sci li a {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 60px;
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    transform: scale(2.0);
+}
+
+.sci li a:hover {
+    transform: scale(2.5);
+}
+
+@media(max-width:991px) {
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 48px;
+    }
+    section {
+        padding: 40px;
+    }
+    .content .contentBox h2 {
+        font-size: 2.5em;
+        color: #fff;
+        line-height: 1em;
+    }
+    .content .contentBox p {
+        font-size: 1em;
+    }
+    header .navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        z-index: 10;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+    }
+    header .navigation li a {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .toggleMenu {
+        float: right;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url('../images/toggleMenu.jpg');
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 11;
+    }
+    .toggleMenu.active {
+        background: url('../images/close.jpg');
+        background-position: center;
+        background-size: 24px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 11;
+    }
+    .navigation.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navigation.active li a:hover {
+        background: #03a9f4;
+        color: #fff;
+    }
+}
