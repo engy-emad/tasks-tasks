@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/pepsi.css">
+    <title>pepsi</title>
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="../images/pepsi logo.jpg" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">NewSletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <!-- https://classroom.udacity.com/me?bsft_aaid=05789e3b-9a7b-4421-becb-22c268b7011f&bsft_
+            eid=8fd4b69c-e814-4017-ae28-492f32c0a96c&utm_campaign=gov_700_fwd2_t2_conlite_
+            students_enrolled&utm_source=blueshift&utm_medium=email&utm_content=gov_700_fwd2_t2_conlite_
+            
+            graduation_deadline&bsft_clkid=519714cc-2165-4803-9216-553e3aea92f4&bsft_u
+            id=fcf651ca-bbe6-4972-856e-dc109d732798&bsft_mid=e6c70f07-2bd9-4214-905d-15b00a812b4a&bsft
+            
+            _txnid=6023270e-15ff-4ca6-be17-0027849ab255&bsft_mime_type=html&bsft_ek=2022-02-22T02%3A05%3A11Z&bsft_lx=1&bsft_tv=16 -->
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's what <br><span>Like </span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut non, id necessitatibus placeat quis nulla porro modi tempora reprehenderit praesentium sequi enim ipsa voluptatibus blanditiis natus aspernatur maxime consectetur dignissimos.</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="./images/pepsi 1.jpg" alt="" id="pepsi">
+                <ul class="sci">
+
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="../images/pepsi blue.jpg" onclick="imgSlider('../images/pepsi blue.jpg'); changeBgColor('#0062be')" alt=""></li>
+            <li><img src="../images/pepsi black.jpg" onclick="imgSlider('../images/pepsi black.jpg');changeBgColor('#e60c2c')" alt=""></li>
+            <li><img src="../images/pepsi white.jpg" onclick="imgSlider('../images/pepsi 2.jpg');changeBgColor('#1e1e1e')"></li>
+
+
+        </ul>
+
+        <script>
+            function imgSlider(anything) {
+                document.getElementById("pepsi").src = anything;
+
+            }
+
+            function changeBgColor(color) {
+                const sec = document.querySelector('.sec');
+                sec.style.background = color;
+            }
+        </script>
+    </section>
+</body>
+
+</html>
